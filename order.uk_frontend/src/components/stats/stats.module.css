@@ -1,0 +1,46 @@
+.faqStats {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 2rem;
+    background-color: #FC8A06;
+    padding: 16px;
+    border-radius: 10px;
+    gap: 10px;
+}
+
+.faqStat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-right: 1px solid #FFFFFF;
+    padding-right: 30px;
+}
+
+.faqStatValue {
+    font-size: 2rem;
+    color: #FFFFFF;
+    font-weight: 200;
+}
+
+.faqStatLabel {
+    font-family: Poppins;
+    font-size: 1.5rem;
+    color: #FFFFFF;
+    font-weight: 500;
+}
+
+@media (max-width: 768px) {
+    .faqStats {
+        flex-direction: column;
+        align-items: center;
+        margin: 1rem;
+    }
+
+    .faqStat {
+        padding: 0.5rem;
+        padding-bottom: 20px;
+        margin-bottom: 1rem;
+        border-bottom: 1px solid #FFFFFF;
+        border-right: none;
+    }
+}

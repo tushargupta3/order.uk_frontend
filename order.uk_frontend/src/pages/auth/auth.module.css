@@ -1,0 +1,95 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 100vh;
+}
+
+.container1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50vw;
+    height: 100vh;
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+}
+
+.container2 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-top: 20vh;
+    width: 30vw;
+    height: 60vh;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.imageStyle {
+    width: 90%;
+    height: 90%;
+    border-radius: 10px;
+}
+
+.imageBigText {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 3vw;
+    line-height: 4vw;
+    text-align: center;
+    color: #FFFFFF;
+    position:absolute;
+    top: 60%;
+}
+
+.imageSmallText {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 1.5vw;
+    line-height: 2vw;
+    text-align: center;
+    color: #FFFFFF;
+    position:absolute;
+    top: 70%;
+}
+
+.headerText {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    text-align: center;
+    color: #343434;
+}
+
+.lightText {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    text-align: center;
+    color: #828282;
+}
+
+.buttonStyle {
+    color: #FC8A06;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .container2 {
+        width: 100vw;
+    }
+
+    .container1 {
+        visibility: hidden;
+    }
+}

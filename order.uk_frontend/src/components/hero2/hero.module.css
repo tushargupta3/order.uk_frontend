@@ -1,0 +1,83 @@
+/* Styles for Ordering Section */
+
+.orderingSection {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    background-color: #fff;
+    border: 1px solid #f0f0f0;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    gap: 2rem;
+}
+
+.orderingSection .textContent {
+    flex: 1;
+    text-align: left;
+}
+
+.orderingSection .textContent h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.orderingSection .textContent h2 span {
+    color: #ff8800; /* Highlighted text color */
+    font-weight: bold;
+}
+
+.orderingSection .textContent p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 1.5rem;
+}
+
+.orderingSection .appButtons {
+    display: flex;
+    gap: 1rem;
+}
+
+.orderingSection .appButtons img {
+    width: 140px;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.orderingSection .appButtons img:hover {
+    transform: scale(1.05);
+}
+
+.orderingSection .imageContainer {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.orderingSection .imageContainer img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+@media (max-width: 768px) {
+    .orderingSection {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .orderingSection .textContent {
+        order: 2;
+        margin-top: 2rem;
+    }
+
+    .orderingSection .imageContainer {
+        order: 1;
+    }
+}

@@ -1,0 +1,199 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+}
+
+.orderDetails {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.orderDetails h2 {
+    font-size: 24px;
+    display: flex;
+    color: #000;
+}
+
+.orderDetails span{
+    cursor: pointer;
+}
+
+.itemContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    border-bottom: 1.5px solid #000;
+    padding: 10px 10px 10px 0px;
+}
+
+.divider {
+    border: 1.5px solid #000;
+    border-radius: 12px;
+    padding: 10px;
+}
+
+.itemImage {
+    width: 50px;
+    height: 50px;
+}
+
+.itemImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.itemDetails {
+    flex: 1;
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+}
+
+.itemName {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.itemPrice {
+    font-size: 14px;
+    font-weight: 600;
+    color: #028643;
+}
+
+.itemQuantity {
+    font-size: 14px;
+    color: #666;
+}
+.orderNotes {
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px 10px 10px ;
+}
+.orderNotes textarea {
+    height: 20px;
+    padding: 10px 10px 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 100px;
+    resize: none;
+    margin: -10px;
+}
+
+.orderSummaryItems {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: -20px;
+}
+
+
+.orderSummary {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 60px;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex: 1
+}
+
+/* delivery part */
+
+.deliveryAddress {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    border-radius: 60px;
+    width: 100%;
+    justify-content: space-between;
+    height: 40px;
+    border: 1px solid #000;
+    cursor: pointer;
+}
+
+.deliveryAddress:hover {
+    background-color: #ccc;
+}
+
+.addressDetails {   
+    flex-direction: column;
+    margin-left: 10px;
+    text-align: left;
+    gap: 0;
+}
+
+.addressDetails h3 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: -10px;
+    text-align: left;
+}
+
+.addressDetails p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 150px;
+}
+
+.locationIcon {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #000;
+    padding: 10px;
+    border-radius: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.orderInfo {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.orderInfo p {
+    font-size: 14px;
+    color: #666;
+    text-align: left;
+}
+
+.total {
+    font-weight: bold;
+}
+
+.paymentButton {
+    background-color: #FC8A06;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 100px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.dividerLine {
+    height: 1px;
+    width: 100%;
+    background-color: #000;
+    margin: 10px 0;
+    border: none;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .orderSummary {
+        width: 100%;
+    }
+}

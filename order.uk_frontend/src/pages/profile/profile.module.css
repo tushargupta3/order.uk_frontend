@@ -1,0 +1,285 @@
+/* General container styles */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+}
+
+.profileSummary {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.profileHeader {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.profileHeader h2 {
+    font-size: 24px;
+    display: flex;
+    color: #000;
+}
+
+.profileHeader h2 span {
+    cursor: pointer;
+}
+
+.profileDetails {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+}
+
+.profileImage {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.profileImage div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.profileImage img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profileImage h3 {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.profileInfo {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(250px, 1fr));
+    gap: 20px;
+    border-radius: 8px;
+    justify-content: space-between;
+    width: 95%;
+}
+
+.profileInfo label {
+    font-weight: 400;
+    color: #000;
+}
+
+.saveButton {
+    background-color: #fc8a06;
+    color: white;
+    padding: 8px 24px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+.saveButton:hover {
+    opacity: 0.8;
+}
+
+/* Input styles for edit mode */
+.profileInfo label {
+    display: block;
+    margin-top: 10px;
+    font-weight: 500;
+    color: #444;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.profileInfo div {
+    margin: 10px;
+}
+
+.profileInfo input {
+    width: 100%;
+    padding: 12px 16px;
+    border: 0.5px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #000;
+}
+
+.savedPaymentMethods {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 10px 30px;
+    margin-bottom: 20px;
+}
+
+.savedPaymentMethods h2 {
+    margin: 0 0 20px 0;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.paymentCard {
+    display: flex;
+    flex-direction: row;
+    height: 60px;
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.paymentCard img {
+    cursor: pointer;
+}
+
+.paymentCard p {
+    color: #000;
+    font-size: 16px;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.paymentCard span {
+    opacity: 0.5;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.addCard {
+    display: flex;
+    flex-direction: row;
+    height: 60px;
+    width: 200px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.addCard:hover {
+    background-color: #f9f9f9;
+}
+
+.addCard p {
+    color: #000;
+    font-size: 16px;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.paymentMethod {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+.cardDetails p {
+    margin: 5px 0;
+    font-size: 1rem;
+    color: #444;
+}
+
+.cardActions {
+    display: flex;
+    gap: 10px;
+}
+
+.editButton {
+    background-color: #4CAF50;
+}
+
+.deleteButton {
+    background-color: #D32F2F;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+.deleteButton:hover {
+    opacity: 0.8;
+}
+
+/* Add New Card Button */
+.addNewCard button {
+    background-color: #fc8a06;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    width: 100%;
+}
+
+.addNewCard button:hover {
+    opacity: 0.9;
+}
+
+.paymentHeader {
+    padding: 0px 20px 0 30px;
+}
+
+.dividerLine {
+    height: 1px;
+    width: 100%;
+    background-color: #000;
+    margin: 30px 20px 0px 10px;
+    border: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .profileInfo {
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    .savedPaymentMethods {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .paymentCard {
+        width: 100%;
+    }
+
+    .addCard {
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    .paymentMethod {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+}

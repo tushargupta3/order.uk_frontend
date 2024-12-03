@@ -1,0 +1,281 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+}
+
+.heroSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    background-color: #fdfdfd;
+}
+
+.heroContent h1 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.heroContent h1 span {
+    color: #FC8A06;
+}
+
+.heroContent p {
+    font-size: 1.2rem;
+    color: #666;
+    margin: 1rem 0;
+}
+
+.searchBar {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.searchBar input {
+    padding: 0.7rem;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    flex: 1;
+}
+
+.searchBar button {
+    padding: 0.7rem 1rem;
+    background-color: #FC8A06;
+    border: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.heroImage img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.offersSection {
+    padding: 2rem;
+    background-color: #fff;
+    flex-direction: row;
+}
+
+.offersSection h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.offersSection .categories {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.offersSection .categories button {
+    padding: 10px 20px;
+    background-color: transparent;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    font-size: 14px;
+    height: 40px;
+    margin: 5px;
+}
+
+.offersSection .categories .active {
+    border: 1px solid #FC8A06;
+    background-color: white;
+    color: #FC8A06;
+    border-color: #FC8A06;
+}
+
+.offersSection .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+}
+
+.popularCategories .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+}
+
+.card {
+    width: 100%;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: left;
+}
+
+.card div {
+    display: flex;
+    flex-direction: column;
+    height: 50px;
+    padding: 0;
+}
+
+.card h4{
+    font-size: 16px;
+    font-weight: 600; 
+    padding-left: 10px;
+    margin-top: 0px;
+}
+
+.card p {
+    /* font-size: 12px; */
+    color: #FC8A06;
+    padding-left: 10px;
+    /* margin-top: -20px; */
+    font-weight: 600;
+}
+
+.cardDetails {
+    padding: 1rem;
+}
+
+.cardDetails p {
+    font-size: 0.9rem;
+    color: #777;
+}
+
+.cardDetails h3 {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.discount {
+    font-size: 1rem;
+    color: red;
+    font-weight: bold;
+}
+
+.popularCategories {
+    padding: 2rem;
+    background-color: #fff;
+}
+
+.popularCategories h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+/*Partner rider section - START*/
+
+.partnerRiderSection {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px;
+}
+
+.cardPR {
+    width: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cardPR:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.imageContainer {
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+
+.imageContainer img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #fff;
+    color: #333;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.content {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    padding: 20px;
+    text-align: left;
+}
+
+.subtitle {
+    font-size: 14px;
+    color: #FC8A06;
+    margin-bottom: 8px;
+}
+
+.title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #f8f8f8;
+    margin-bottom: 20px;
+}
+
+.button {
+    padding: 10px 20px;
+    background-color: #FC8A06;
+    color: #fff;
+    border: none;
+    border-radius: 100px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #e55c00;
+}
+
+/*Partner rider section - END*/
+
+@media (max-width: 768px) {
+    .heroSection {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .heroContent {
+        margin-bottom: 2rem;
+    }
+
+    .partnerRiderSection {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .categories {
+        flex-direction: column;
+    }
+
+    .popularCategories .cards {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 0.5rem;
+    }
+}

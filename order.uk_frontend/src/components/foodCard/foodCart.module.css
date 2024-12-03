@@ -1,0 +1,99 @@
+.foodCard {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  border: 1px solid #e2e2e2;
+  border-radius: 10px;
+  padding: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 300px;
+  margin: 12px;
+}
+
+.foodCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.textSection {
+  flex: 2;
+  padding-right: 16px;
+}
+
+.foodName {
+  font-size: 16px;
+  font-weight: 600;
+  color: #222;
+  margin: 0 0 8px;
+}
+
+.foodDescription {
+  font-size: 14px;
+  color: #666;
+  margin: 0 0 12px;
+}
+
+.price {
+  font-size: 16px;
+  font-weight: bold;
+  color: #222;
+}
+
+.imageSection {
+  flex: 1;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.foodImage {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.addButton {
+  position: absolute;
+  bottom: -10px;
+  right: -10px;
+  font-size: 32px;
+  color: #000;
+  cursor: pointer;
+  background: white;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.addButton:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}  
+
+@media (max-width: 768px) {
+  .foodCard {
+    max-width: 100%;
+    height: 150px;
+  }
+
+  .foodImage {
+    height: 100%;
+    width: 100%;
+  }
+
+  .imageSection {
+    height: 100%;
+    width: 100%;
+    background-color: azure;
+  }
+
+  .foodName {
+    text-align: left;
+    font-size: 18px;
+    font-weight: 600;
+  }
+}

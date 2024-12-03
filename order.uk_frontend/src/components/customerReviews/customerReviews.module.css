@@ -1,0 +1,112 @@
+/* CSS for Customer Reviews Component */
+.customerReviewsSection {
+    padding: 20px;
+    background-color: #D9D9D9;
+}
+
+.sectionTitle {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.reviewsWrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.reviewsContainer {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 10px 0;
+    width: 1050px;
+
+    /* Hide scrollbar */
+    scrollbar-width: none; /* For Firefox */
+    -ms-overflow-style: none; /* For Internet Explorer and Edge */
+}
+
+.reviewsContainer::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari, and Edge */
+}
+
+
+.reviewCard {
+    flex: 0 0 300px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.reviewHeader {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.reviewerImage {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.rating {
+    margin-left: auto;
+    color: #f4b400;
+    font-size: 16px;
+}
+
+.reviewDate {
+    font-size: 14px;
+    color: #666;
+    margin: 10px 0;
+}
+
+.reviewText {
+    font-size: 14px;
+    color: #333;
+}
+
+.scrollButtonLeft, .scrollButtonRight {
+    /* position: absolute; */
+    top: 50%;
+    transform: translateY(-50%);
+    background: #f4b400;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.scrollButtonLeft:hover, .scrollButtonRight:hover {
+    background: #d39e00;
+}
+
+.ratingContainer {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-left: 45%;
+}
+
+@media (max-width: 768px) {
+    .reviewsContainer {
+        width: 100%;
+    }
+
+    .reviewCard {
+        flex: 0 0 90%;
+    }
+}

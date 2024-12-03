@@ -1,0 +1,148 @@
+/* Delivery Component CSS */
+.container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.paymentMethods {
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+}
+
+.paymentMethods h2 {
+    font-size: 24px;
+    display: flex;
+    color: #000;
+}
+
+.paymentMethods h2 span {
+    cursor: pointer;
+}
+
+.paymentOptions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.paymentOptionDiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #FFE8CE;
+    border-radius: 100px;
+    width: 90%;
+    cursor: pointer;
+    padding: 0px 10px 0px 10px;
+}
+
+.paymentOptionDiv:hover {
+    background-color: #FFE8CE;
+}
+
+.paymentOptionDiv p {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+    color: #000;
+    line-height: 15px;
+}
+
+.paymentOptionDiv p span{
+    margin: 0;
+    font-size: 12px;
+    font-weight: 200;
+    color: #83858A;
+}
+
+.paymentOptionContent {
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* Align items vertically */
+    gap: 10px; /* Add spacing between image and text */
+}
+
+.paymentOptionImg {
+    width: 50px;
+    height: 50px;
+}
+
+.paymentOptionRadio {
+    width: 16px;
+    height: 16px;
+    accent-color: #FC8A06; /* Color of the radio button */
+    cursor: pointer;
+}
+
+.paymentSummary {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    border: 1px solid #000;
+    border-radius: 12px;
+    padding: 10px;
+    margin-top: 60px;
+}
+
+.dividerLine {
+    height: 1px;
+    width: 100%;
+    background-color: #000;
+    margin: 10px 0;
+    border: none;
+}
+
+.amount {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.paymentButton {
+    background-color: #FC8A06;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 100px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.sucessContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    width: 260px;
+}
+
+.sucessContainer p {
+    font-size: 14px;
+    color: #000;
+    font-weight: 300;
+}
+
+.sucessContainer div {
+    width: 100%;
+    align-items: center;
+    border: 1px solid #000;
+    border-radius: 12px;
+    padding: 10px;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+}

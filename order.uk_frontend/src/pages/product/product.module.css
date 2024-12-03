@@ -1,0 +1,174 @@
+.parentContainer {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+}
+
+.mapContainer {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    height: 400px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.searchHeaderConatiner {
+    display: flex;
+    padding: 10px 40px;
+    font-family: 'Arial', sans-serif;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: -30px;
+}
+
+.searchHeaderConatiner h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.searchBarContainer {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.searchBarWithIcon {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border-radius: 100px;
+}
+
+.searchIcon {
+    position: absolute;
+    left: 10px;
+    font-size: 1.5rem;
+    color: #aaa;
+    cursor: pointer;
+}
+
+.searchBar {
+    width: 100%;
+    padding: 10px 10px 10px 40px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    border-radius: 100px;
+}
+
+.searchBar:focus {
+    border-color: #888;
+}
+
+.staticNav {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    background-color: var(--app-orange);
+    padding: 10px 40px;
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+
+.staticNav button {
+    padding: 5px 20px;
+    border: none;
+    background-color: transparent;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 100px;
+    margin-right: 10px;
+}
+
+.staticNav .active {
+    background-color: #03081F;
+    border: 1px solid #000;
+}
+
+
+.foodItemsSection {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.categorySection {
+    margin-bottom: 20px;
+}
+
+.foodItems {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.cartContainer {
+    flex: 1;
+    max-width: 350px;
+    position: sticky;
+    top: 10px;
+    align-self: flex-start;
+}
+
+.offerContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    padding: 30px;
+}
+
+.offerCard {
+    width: 100%;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.offerCard img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .foodItemsSection {
+        flex: 1;
+    }
+
+    .cartContainer {
+        margin-top: 20px;
+    }
+
+    .offerContainer {
+        display: none;
+    }
+
+    .foodItems {
+        grid-template-columns: 1fr;
+    }
+
+    .searchHeaderConatiner {
+        display: none;
+    }
+}

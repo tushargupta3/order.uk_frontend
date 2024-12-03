@@ -1,0 +1,66 @@
+.infoSection {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 40px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .deliveryInfo,
+  .contactInfo,
+  .operationalTimes {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.5;
+  }
+  
+  strong {
+    font-weight: 600;
+    color: #333;
+  }
+  
+  a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+
+  .operationalTimes {
+    background: #1c1c3d;
+    color: #fff;
+  }
+  
+  .operationalTimes h2 {
+    color: #fff;
+  }
+  
+  .operationalTimes p {
+    color: #ddd;
+  }
+
+  @media (max-width: 768px) {
+    .infoSection {
+      grid-template-columns: 1fr;
+    }
+  }
